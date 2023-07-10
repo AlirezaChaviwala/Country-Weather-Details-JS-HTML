@@ -13,7 +13,7 @@ document.body.append(header);
 
 async function getRestData() {
     try {
-        var restResponse = await fetch('https://restcountries.eu/rest/v2/all');
+        var restResponse = await fetch('https://restcountries.com/v3.1/all');
         var restData = await restResponse.json();
 
         let container = document.createElement('div');
