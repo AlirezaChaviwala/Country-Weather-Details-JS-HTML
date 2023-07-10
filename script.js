@@ -41,7 +41,7 @@ async function getRestData() {
             setAttr(['class'], ['card-body d-flex flex-column align-items-center'], cardbody);
             card.append(cardbody);
             let flag = document.createElement('img');
-            flag.src = restData[i].flag;
+            flag.src = restData[i].flags.png;
             setAttr(['class', 'style'], ['m-3 card-img', 'height:150px;'], flag)
             cardbody.append(flag);
             let capital = document.createElement('p');
@@ -51,7 +51,7 @@ async function getRestData() {
             region.innerText = `Region: ${restData[i].region}`
             cardbody.append(region);
             let countryCode = document.createElement('p');
-            countryCode.innerText = `Country Code: ${restData[i].alpha3Code}`
+            countryCode.innerText = `Country Code: ${restData[i].cca3}`
             cardbody.append(countryCode);
             let latlong = document.createElement('p');
             latlong.innerText = `Lat/Long: ${restData[i].latlng[0]}/${restData[i].latlng[1]}`
