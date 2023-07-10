@@ -34,7 +34,7 @@ async function getRestData() {
 
             let cardheader = document.createElement('div');
             setAttr(['class'], ['card-header bg-dark text-white'], cardheader);
-            cardheader.innerText = `${restData[i].name}`;
+            cardheader.innerText = `${restData[i].name.common}`;
             card.append(cardheader);
 
             let cardbody = document.createElement('div');
