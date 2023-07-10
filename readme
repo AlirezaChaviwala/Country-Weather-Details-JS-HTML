@@ -1,0 +1,5 @@
+--Written in JS, HTML,CSS
+--Integrated restcountries api for country data and openweather api for country weather data
+
+--Hosted Netlify link
+https://country-data-weather-info.netlify.app/
